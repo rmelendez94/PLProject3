@@ -1,0 +1,40 @@
+body {
+    font-family: "Myriad Pro", sans-serif;
+    background-color: ghostwhite;
+    width: 590px;
+    margin: 0 auto;
+    padding: 0 2em 1em;
+    border: 10px inset steelblue;
+}
+h1 {
+    color: steelblue;
+    margin-bottom: .25em;
+    text-align: center;
+
+}
+label {
+    float: left;
+    width: 25em;
+    text-align: start;
+}
+label.radiolabel {
+    float: left;
+    width: 25em;
+    text-align: end;
+}
+input {
+    margin-left: 1em;
+    margin-bottom: .5em;
+    margin-right: .5em;
+    width: 11em;
+}
+input.radioinput{
+    float: left;
+}
+span {
+    color: red;
+}
+
+.hide {
+    display: none;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Person Tester Application</title>
+    <link rel="stylesheet" href="person_tester.css">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="person_tester.js"></script>
+
+</head>
+<body>
+<main id="tester">
+
+    <h1>Person Tester application</h1>
+    <div id="choice">
+        <div>
+            <!--find a way for whatever goes in this text box to be used right
+            away to know which other text boxes to show -->
+            <label>Create customer or employee? (select one):</label>
+        </div>
+        <br>
+        <div>
+            <form>
+                <label for="customer" class="radiolabel">Customer</label>
+                <input type="radio" name="type" id="customer_choice" value="customer" class="radioinput"><br>
+                <label for="employee" class="radiolabel">Employee</label>
+                <input type="radio" name="type" id="employee_choice" value="employee" class="radioinput"><br>
+            </form>
+        </div>
+    </div>
+    <!--Show customer when user selects making a customer type only-->
+    <div class="hide" id="customer">
+        <h2>Customer Details</h2>
+        <label for="first_name_customer">Enter first name:</label>
+        <input type="text" id="first_name_customer"><br>
+        <label for="last_name_customer">Enter last name:</label>
+        <input type="text" id="last_name_customer"><br>
+        <label for="email_address_customer">Enter email address:</label>
+        <input type="text" id="email_address_customer"><br>
+        <label for="customer_number">Enter customer number:</label>
+        <input type="text" id="customer_number"><br>
+    </div>
+    <!--Show employee when user selects making an employee type only-->
+    <div class="hide" id="employee">
+        <h2>Employee Details</h2>
+        <label for="first_name_employee">Enter first name:</label>
+        <input type="text" id="first_name_employee"><br>
+        <label for="last_name_employee">Enter last name:</label>
+        <input type="text" id="last_name_employee"><br>
+        <label for="email_address_employee">Enter email address:</label>
+        <input type="text" id="email_address_employee"><br>
+        <label for="social_security">Enter social security number:</label>
+        <input type="text" id="social_security"><br>
+    </div>
+    <!--Once they enter all info for whatever they choose show it below as output-->
+    <div class="hide" id="output">
+        <p>You entered:<br>***SHOW OUTPUT HERE***</p>
+    </div>
+    <!--Once they receive their output ask if they want to go again, maybe keep the
+    results up and just make the continue option show up under it all after a while
+    use: setTimeout(function, milliseconds), which Executes a function, after
+    waiting a specified number of milliseconds.-->
+    <div class="hide" id="continue_choice">
+        <label>Continue? (select one):</label>
+        <label for="continue_yes" class="radiolabel">Yes</label>
+        <input type="radio" name="type" id="continue_yes" value="yes" class="radioinput"><br>
+        <label for="continue_no" class="radiolabel">No</label>
+        <input type="radio" name="type" id="continue_no" value="no" class="radioinput"><br>
+    </div>
+    <!--Multipurpose enter button, will be used at each major stage of entry-->
+    <div>
+        <label>&nbsp;</label>
+        <input type="button" id="enter" value="Enter"><br>
+    </div>
+</main>
+</body>
+</html>
