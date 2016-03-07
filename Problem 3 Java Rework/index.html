@@ -27,6 +27,10 @@
                 <input type="radio" name="type" id="employee_choice" value="employee" class="radioinput"><br>
             </form>
         </div>
+        <div>
+            <label>&nbsp;</label>
+            <input type="button" id="enter_choice" value="Enter"><br>
+        </div>
     </div>
     <!--Show customer when user selects making a customer type only-->
     <div class="hide" id="customer">
@@ -36,9 +40,13 @@
         <label for="last_name_customer">Enter last name:</label>
         <input type="text" id="last_name_customer"><br>
         <label for="email_address_customer">Enter email address:</label>
-        <input type="text" id="email_address_customer"><br>
+        <input type="text" id="email_address_customer" placeholder="example@example.com"><br>
         <label for="customer_number">Enter customer number:</label>
         <input type="text" id="customer_number"><br>
+        <div>
+            <label>&nbsp;</label>
+            <input type="button" id="enter_customer" value="Enter"><br>
+        </div>
     </div>
     <!--Show employee when user selects making an employee type only-->
     <div class="hide" id="employee">
@@ -48,13 +56,17 @@
         <label for="last_name_employee">Enter last name:</label>
         <input type="text" id="last_name_employee"><br>
         <label for="email_address_employee">Enter email address:</label>
-        <input type="text" id="email_address_employee"><br>
+        <input type="text" id="email_address_employee" placeholder="example@example.com"><br>
         <label for="social_security">Enter social security number:</label>
-        <input type="text" id="social_security"><br>
+        <input type="text" id="social_security" placeholder="XXX-XX-XXXX"><br>
+        <div>
+            <label>&nbsp;</label>
+            <input type="button" id="enter_employee" value="Enter"><br>
+        </div>
     </div>
     <!--Once they enter all info for whatever they choose show it below as output-->
     <div class="hide" id="output">
-        <p>You entered:<br>***SHOW OUTPUT HERE***</p>
+        <p id="output_paragraph">You entered:<br>***SHOW OUTPUT HERE***</p>
     </div>
     <!--Once they receive their output ask if they want to go again, maybe keep the
     results up and just make the continue option show up under it all after a while
@@ -66,12 +78,12 @@
         <input type="radio" name="type" id="continue_yes" value="yes" class="radioinput"><br>
         <label for="continue_no" class="radiolabel">No</label>
         <input type="radio" name="type" id="continue_no" value="no" class="radioinput"><br>
+        <div>
+            <label>&nbsp;</label>
+            <input type="button" id="enter_continue" value="Enter"><br>
+        </div>
     </div>
     <!--Multipurpose enter button, will be used at each major stage of entry-->
-    <div>
-        <label>&nbsp;</label>
-        <input type="button" id="enter" value="Enter"><br>
-    </div>
 </main>
 </body>
 </html>
